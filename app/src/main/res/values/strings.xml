@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">AushadHub</string>
+    <string name="hub">औषधhub</string>
+    <string name="about">The aim of the project is to take raw images of the leaves of plants , upon which it identifies whether the plant is one of the 40 medicinal leaaves in the chosen dataset of medicinal herbs , if yes , then provide the user with any relevant information relating to the use case and procedure to use them (if any).</string>
+    <string name="medidicinal_herb_detection">Medicinal Herb Detection</string>
+    <string name="med_hub">औषध hub</string>
+    <string name="icon">icon</string>
+    <string name="upload_camera">Camera</string>
+    <string name="upload_gallery">Gallery</string>
+    <string name="holder">HOLDER</string>
+</resources>
