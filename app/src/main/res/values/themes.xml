@@ -3,7 +3,7 @@
     <style name="Base.Theme.AushadHub" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
-        <item name="android:statusBarColor">#FFEBEE</item>
+        <item name="android:statusBarColor">#3B00C853</item>
     </style>
 
     <style name="Theme.AushadHub" parent="Base.Theme.AushadHub" />
