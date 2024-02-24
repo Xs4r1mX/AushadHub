@@ -56,9 +56,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAlignment="center"
             android:fontFamily="sans-serif-smallcaps"
             android:text="@string/medidicinal_herb_detection"
+            android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="24sp"
             android:textStyle="bold" />
@@ -85,8 +85,8 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
-        android:textAlignment="center"
         android:layout_marginBottom="20dp"
+        android:textAlignment="center"
         android:textSize="30sp"
         tools:text="Prediction" />
 
@@ -94,14 +94,11 @@
         android:id="@+id/check_usecase"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="10dp"
-        android:layout_centerHorizontal="true"
         android:layout_below="@+id/result"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="10dp"
         android:backgroundTint="#85005E27"
         android:text="@string/use_cases" />
-
-
-
 
 
     <androidx.cardview.widget.CardView

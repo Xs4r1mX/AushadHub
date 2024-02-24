@@ -1,17 +1,16 @@
 package com.s4r1m.aushadhub;
 
-import android.app.Dialog;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -33,11 +32,10 @@ public class MainActivity extends AppCompatActivity {
     Button button_gallery;
     Button check_usecase;
 
-    int maxPos = 0;
+    int maxPos = -1;
 
     private final int CAMERA_REQ_CODE = 100;
     private final int GALLERY_REQ_CODE = 200;
-
 
 
     @Override
@@ -53,9 +51,15 @@ public class MainActivity extends AppCompatActivity {
         check_usecase.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, UseCaseActivity.class);
-                intent.putExtra("key", maxPos);
-                startActivity(intent);
+                if(maxPos!=-1){
+                    Intent intent = new Intent(MainActivity.this, UseCaseActivity.class);
+                    intent.putExtra("key", maxPos);
+                    startActivity(intent);
+                }
+                else{
+                    Toast.makeText(MainActivity.this, "Select or Click an Image First", Toast.LENGTH_SHORT).show();
+                }
+
             }
         });
 
